@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "babel-node app.js",
+    "start": "server",
+    "local": "babel-node app.js",
     "build": "npm-run-all clean transpile",
     "server": "node ./dist-server/bin/www",
     "transpile": "babel ./server --out-dir dist-server",
@@ -12,7 +13,7 @@
     "lint": "eslint .  --ext .js --fix"
   },
   "nodemonConfig": {
-    "exec": "npm start",
+    "exec": "npm run local",
     "watch": [
       "server/*",
       "public/*"
