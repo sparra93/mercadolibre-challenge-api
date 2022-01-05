@@ -6,7 +6,7 @@ import { join } from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import cors from "cors";
-import configureRoutes from "./server/routes";
+import configureRoutes from "./routes";
 
 const router = Router();
 const app = express();
