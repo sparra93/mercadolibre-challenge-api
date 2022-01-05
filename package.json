@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "server",
+    "start": "node ./dist-server/bin/www",
     "local": "babel-node app.js",
     "build": "npm-run-all clean transpile",
     "server": "node ./dist-server/bin/www",
